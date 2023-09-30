@@ -3,7 +3,6 @@ This is a node web server which searches for UPnP&trade; / DLNA servers and show
 
 The node libraries `node-ssdp` and `node-upnp-control-point` are used for UPnP&trade; / DLNA discovery and browsing.
 
-
 ## http://\<ip\>:3000/index.html
 Shows all detected UPnP&trade; / DLNA servers.
 
