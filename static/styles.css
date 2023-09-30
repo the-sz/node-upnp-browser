@@ -1,0 +1,85 @@
+:root
+{
+	--bs-primary: #1656cc;
+	--bs-font-sans-serif: 'Raleway', sans-serif;
+	--bs-body-font-weight: 500;
+}
+
+.devices
+{
+	padding-top: calc(var(--bs-gutter-x) * .5);
+	padding-bottom: calc(var(--bs-gutter-x) * .5);
+}
+
+.device-icon img
+{
+	width: 60px;
+}
+
+.device-name
+{
+	color: var(--bs-body-color);
+}
+
+.item
+{
+	cursor: pointer;
+	user-select: none;
+}
+
+.item-icon
+{
+	font-size: 2rem;
+}
+
+.item.playing .item-icon
+{
+	color: var(--bs-primary);
+}
+
+.item.folder .item-icon .bi-folder2
+{
+	display: inline !important;
+}
+
+.item.file:not(.playing) .item-icon .bi-file-music
+{
+	display: inline !important;
+}
+
+.item.file.playing .item-icon .bi-file-play
+{
+	display: inline !important;
+}
+
+.item-song-info
+{
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.item-title
+{
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.item-artist
+{
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.item-size
+{
+	white-space: nowrap;
+}
+
+.fixed-bottom
+{
+	background-color: var(--bs-body-bg);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}

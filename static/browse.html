@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<meta name="theme-color" content="#FFFFFF" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body style="padding-bottom: 70px;">
+
+		<div class="container-fluid">
+
+			<ul id="item-list" class="list-group list-group-flush">
+			</ul>
+
+			<div id="loading"></div>
+
+		</div>
+
+		<template id="template">
+			<li class="list-group-item px-0">
+				<div class="d-flex item" data-id="" data-url="" onclick="itemClicked(this);">
+					<div class="align-self-center item-icon">
+						<i class="d-none bi bi-folder2"></i>
+						<i class="d-none bi bi-file-play"></i>
+						<i class="d-none bi bi-file-music"></i>
+					</div>
+					<div class="flex-grow-1 align-self-center ms-2 item-song-info">
+						<div class="item-title"></div>
+						<div class="item-artist text-body-tertiary"></div>
+					</div>
+					<div class="align-self-center">
+						<div class="text-end text-body-tertiary item-duration"></div>
+						<div class="text-end text-body-tertiary item-size"></div>
+					</div>
+				</div>
+			</li>
+		</template>
+
+		<div class="fixed-bottom">
+			<audio id="player" class="w-100" controls></audio>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+		<script src="browse.js"></script>
+
+	</body>
+</html>
